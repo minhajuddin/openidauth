@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{72512E8F-3320-418D-82F1-86F315CA8915}"
+	ProjectSection(SolutionItems) = preProject
+		..\docs\UserStories.txt = ..\docs\UserStories.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenIdAuth.Data", "Data\OpenIdAuth.Data.csproj", "{B7F04C66-76A9-4BB3-A62D-2986303F13CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenIdAuth.Service", "Service\OpenIdAuth.Service.csproj", "{EA2A4496-3A2D-4146-A420-243B52473143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenIdAuth.UnitTests", "UnitTests\OpenIdAuth.UnitTests.csproj", "{86AEE7CC-9544-4237-BB9A-C3067272AA91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7F04C66-76A9-4BB3-A62D-2986303F13CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F04C66-76A9-4BB3-A62D-2986303F13CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7F04C66-76A9-4BB3-A62D-2986303F13CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7F04C66-76A9-4BB3-A62D-2986303F13CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA2A4496-3A2D-4146-A420-243B52473143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2A4496-3A2D-4146-A420-243B52473143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2A4496-3A2D-4146-A420-243B52473143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2A4496-3A2D-4146-A420-243B52473143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AEE7CC-9544-4237-BB9A-C3067272AA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AEE7CC-9544-4237-BB9A-C3067272AA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AEE7CC-9544-4237-BB9A-C3067272AA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AEE7CC-9544-4237-BB9A-C3067272AA91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

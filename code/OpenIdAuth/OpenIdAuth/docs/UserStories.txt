@@ -1,0 +1,45 @@
+  1 ACTOR: Anonymous user 
+    ACTION: Should be able to check the availability of a username
+    REASON: To find a username with which he can register
+  
+  2 ACTOR: Registered user
+    ACTION: Should be able to validate a userid and password
+    REASON: So, that the user can access their valuable data
+    
+
+
+
+
+//////////////////////OLD STUFF/////////////////
+* User opens up the site
+  Registration
+    1 He is asked to select a user id
+    2 Once the user selects a user id a # of that is sent to the server (User should select an available id)
+    3 A few random images are sent to the client
+    4 The user selects 3 images and enters 3 pass phrases
+    5 This info is sent to the server after hashing and the server stores it
+    6 The server should then send a link to the downloadable SmartCard file
+    
+  Login
+    1 
+    
+    
+* Changed process
+==Registration==
+D 1 Check availability of user id by sending the # of user id   
+  2 Server randomly picks a few images and sends them to the client
+  3 Client enters the password and the "client scripts" send the Pwdi =>(#((Pwd1 + Pwd2 + Pwd3) + ID))
+  4 The server computes:
+              Mi = #(#(ID) xor Kx)      * Kx is a secret key of the server
+              Vi = Mi xor Pwdi
+  5 The server sends the a file with the value of Vi to the client
+  
+== Login ==
+  1 Client browses to the login page
+  2 Client enters his ID
+      "Client scripts" compute:
+          - Ri = #(ID) xor #(Ks1)     * Ks1 is a random number
+       Ri, Ks1 are sent to the server
+  3 Server extracts #(ID) => (Ri xor #(Ks1))
+  4 Server asks for the location of the file (smartcard)
+  3 
