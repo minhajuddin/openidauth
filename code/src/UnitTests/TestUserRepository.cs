@@ -12,7 +12,7 @@ namespace OpenIdAuth.UnitTests {
         public TestUserRepository() {
             _users = new List<User>();
             for (int i = 0; i < 10; i++) {
-                _users.Add(new User("User" + i));
+                _users.Add(new User("User" + i, "password" + i));
             }
         }
 
@@ -38,6 +38,11 @@ namespace OpenIdAuth.UnitTests {
 
         public void Delete(string userName) {
             _users.Remove(_users.Single(x => x.UserName == userName));
+        }
+
+        public User GetUser(string userName)
+        {
+            throw new NotImplementedException();
         }
     }
 }

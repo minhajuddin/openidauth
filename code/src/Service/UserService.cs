@@ -1,10 +1,10 @@
-using System;
 using System.Collections.Generic;
 using OpenIdAuth.Data.DataAccess;
 using OpenIdAuth.Data.Domain;
 
 namespace OpenIdAuth.Service {
-    public class UserService {
+    public class UserService : IUserService
+    {
         private readonly IUserRepository _repository;
 
         public UserService(IUserRepository repository) {

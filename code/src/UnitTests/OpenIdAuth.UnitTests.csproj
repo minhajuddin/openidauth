@@ -57,10 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OpenIdAuthConfigurationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryTests\UserRepositoryTests.cs" />
     <Compile Include="DomainTests\UserTests.cs" />
     <Compile Include="ServiceTests\AuthenticationServiceTests.cs" />
+    <Compile Include="ServiceTests\ImageServiceTests.cs" />
+    <Compile Include="ServiceTests\TestAuthenticationRepository.cs" />
     <Compile Include="TestUserRepository.cs" />
     <Compile Include="ServiceTests\UserServiceTests.cs" />
   </ItemGroup>
@@ -72,6 +74,10 @@
     <ProjectReference Include="..\Service\OpenIdAuth.Service.csproj">
       <Project>{EA2A4496-3A2D-4146-A420-243B52473143}</Project>
       <Name>OpenIdAuth.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web\OpenIdAuth.Web.csproj">
+      <Project>{F7AC01E9-E3DE-435D-B609-DE0113DD2B14}</Project>
+      <Name>OpenIdAuth.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

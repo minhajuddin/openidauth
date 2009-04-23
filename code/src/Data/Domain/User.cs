@@ -1,10 +1,11 @@
 namespace OpenIdAuth.Data.Domain {
     public class User {
-
-        public User(string userName) {
+        public int UserID { get; set; }
+        private string _password;
+        public string UserName { get; private set; }
+        public User(string userName, string password) {
+            _password = password;
             UserName = userName;
         }
-
-        public string UserName { get; private set; }
     }
 }

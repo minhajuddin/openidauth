@@ -1,13 +1,14 @@
 using System.Collections.Generic;
 using OpenIdAuth.Data.Domain;
 
-namespace OpenIdAuth.Data.DataAccess {
-    public interface IUserRepository {
+namespace OpenIdAuth.Service
+{
+    public interface IUserService
+    {
         IList<User> GetUsers();
         void Insert(User user);
         void Save();
         bool IsUserAvailable(string userName);
         void Delete(string userName);
-        User GetUser(string userName);
     }
 }

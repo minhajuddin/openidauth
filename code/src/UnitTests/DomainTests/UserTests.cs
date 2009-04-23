@@ -10,9 +10,9 @@ namespace OpenIdAuth.UnitTests {
     [TestFixture]
     public class UserTests {
         [Test]
-        public void CanCreateUserWithAUserNameProperty() {
-            var user = new User("Jack");
-            Assert.IsNotNull(user);
+        public void CanCreateUserWithAUserNameAndPasswordProperty() {
+            var user = new User("Jack", "password");
+            Assert.IsNotNull(user, "password");
             Assert.AreEqual("Jack", user.UserName);
         }
     }

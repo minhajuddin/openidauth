@@ -30,7 +30,7 @@ namespace OpenIdAuth.UnitTests.ServiceTests {
         [Test]
         public void InsertShouldInsertDataIntoTheRepository() {
             var initialCount = _userService.GetUsers().Count;
-            var user = new User("Jack");
+            var user = new User("Jack", "jack");
             _userService.Insert(user);
             _userService.Save();
             var result = _userService.GetUsers().Count;
@@ -40,7 +40,7 @@ namespace OpenIdAuth.UnitTests.ServiceTests {
 
         [Test]
         public void IsUserAvailableShouldReturnFalseIfUserAlreadyExists() {
-            var user = new User("Jack");
+            var user = new User("Jack", "jack");
             _userService.Insert(user);
             _userService.Save();
             var result = _userService.IsUserAvailable("Jack");
@@ -58,7 +58,7 @@ namespace OpenIdAuth.UnitTests.ServiceTests {
 
         [Test]
         public void DeleteShouldBeAbleToDeleteUserFromDatabase() {
-            var user = new User("Jack");
+            var user = new User("Jack", "jack");
             _userService.Insert(user);
             _userService.Save();
             Assert.IsFalse(_userService.IsUserAvailable("Jack"));
