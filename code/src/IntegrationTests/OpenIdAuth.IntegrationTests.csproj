@@ -47,6 +47,9 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -58,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryTests\AuthenticationRepositoryTests.cs" />
+    <Compile Include="RepositoryTests\DatabaseMaintenance.cs" />
     <Compile Include="RepositoryTests\UserRepositoryTests.cs" />
   </ItemGroup>
   <ItemGroup>

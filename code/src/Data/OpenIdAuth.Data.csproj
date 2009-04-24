@@ -57,6 +57,7 @@
     <Compile Include="DataAccess\IAuthenticationRepository.cs" />
     <Compile Include="DataAccess\IImageRepository.cs" />
     <Compile Include="DataAccess\IUserRepository.cs" />
+    <Compile Include="DataAccess\SqlAuthenticationRepository.cs" />
     <Compile Include="DataAccess\SqlUserRepository.cs" />
     <Compile Include="Domain\User.cs" />
     <Compile Include="OpenIdAuthConfiguration.cs" />

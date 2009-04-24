@@ -15,7 +15,7 @@
     </hostSetup>
   </testPackageConfig>
   <testFilters>
-    <testFilter filterName="LastRun" filter="" />
-    <testFilter filterName="AutoSave" filter="" />
+    <testFilter filterName="LastRun" filter="Id: b24173103ef809c8" />
+    <testFilter filterName="AutoSave" filter="Id: b24173103ef809c8" />
   </testFilters>
 </project>

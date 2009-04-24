@@ -21,7 +21,7 @@ namespace OpenIdAuth.Data.DataAccess.Context
 	
 	
 	[System.Data.Linq.Mapping.DatabaseAttribute(Name="OpenIdAuth")]
-	internal partial class DBDataContext : System.Data.Linq.DataContext
+	public partial class DBDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Database Name="OpenIdAuth" EntityNamespace="OpenIdAuth.Data.DataAccess.Entity" ContextNamespace="OpenIdAuth.Data.DataAccess.Context" Class="DBDataContext" AccessModifier="Internal" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+<Database Name="OpenIdAuth" EntityNamespace="OpenIdAuth.Data.DataAccess.Entity" ContextNamespace="OpenIdAuth.Data.DataAccess.Context" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Table Name="dbo.Users" Member="Users">
     <Type Name="User">
       <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

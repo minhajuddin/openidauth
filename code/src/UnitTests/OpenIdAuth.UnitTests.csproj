@@ -62,7 +62,7 @@
     <Compile Include="DomainTests\UserTests.cs" />
     <Compile Include="ServiceTests\AuthenticationServiceTests.cs" />
     <Compile Include="ServiceTests\ImageServiceTests.cs" />
-    <Compile Include="ServiceTests\TestAuthenticationRepository.cs" />
+    <Compile Include="TestAuthenticationRepository.cs" />
     <Compile Include="TestUserRepository.cs" />
     <Compile Include="ServiceTests\UserServiceTests.cs" />
   </ItemGroup>
