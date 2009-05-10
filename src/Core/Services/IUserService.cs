@@ -8,5 +8,6 @@ namespace OpenIdAuth.Core.Services {
         void Save();
         bool IsUserAvailable(string userName);
         void Delete(string userName);
+        User GetUser(string userName);
     }
 }

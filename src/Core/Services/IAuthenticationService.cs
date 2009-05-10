@@ -1,5 +1,6 @@
 namespace OpenIdAuth.Core.Services {
     public interface IAuthenticationService {
-        bool AuthenticateUser(string userName, string password);
+        void AuthenticateUser(string userName, string password, bool createPersistentCookie);
+        bool IsValidLogin(string userName, string password);
     }
 }

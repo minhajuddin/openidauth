@@ -41,7 +41,8 @@ namespace OpenIdAuth.UnitTests {
         }
 
         public User GetUser(string userName) {
-            throw new NotImplementedException();
+            return _users.
+                SingleOrDefault(usr => string.Compare(userName, usr.UserName, true) == 0);
         }
     }
 }

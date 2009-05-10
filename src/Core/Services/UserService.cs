@@ -29,5 +29,9 @@ namespace OpenIdAuth.Core.Services {
         public void Delete(string userName) {
             _repository.Delete(userName);
         }
+
+        public User GetUser(string userName) {
+            return _repository.GetUser(userName);
+        }
     }
 }

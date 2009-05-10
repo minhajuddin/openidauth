@@ -2,6 +2,7 @@ using MbUnit.Framework;
 using System.Collections.Generic;
 using OpenIdAuth.Core.Services;
 using OpenIdAuth.Core.Model.Domain;
+using System;
 
 namespace OpenIdAuth.UnitTests.ServiceTests {
     [TestFixture]
@@ -64,6 +65,13 @@ namespace OpenIdAuth.UnitTests.ServiceTests {
             Assert.IsFalse(_userService.IsUserAvailable("Jack"));
             _userService.Delete("Jack");
             Assert.IsTrue(_userService.IsUserAvailable("Jack"));
+        }
+
+        [Test]
+        public void GetUserShouldReturnAMatchingUser() {
+            var result = _userService.GetUser("User1");
+            Assert.IsNotNull(result);
+            Assert.AreEqual("User1", result.UserName, StringComparison.OrdinalIgnoreCase);
         }
     }
 }

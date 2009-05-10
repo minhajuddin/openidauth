@@ -38,6 +38,14 @@
     <Reference Include="System.Data.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -55,10 +63,8 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="Model\DataAccess\IAuthenticationRepository.cs" />
     <Compile Include="Model\DataAccess\IImageRepository.cs" />
     <Compile Include="Model\DataAccess\IUserRepository.cs" />
-    <Compile Include="Model\DataAccess\SqlAuthenticationRepository.cs" />
     <Compile Include="Model\DataAccess\SqlUserRepository.cs" />
     <Compile Include="Model\Domain\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -62,15 +62,18 @@
     <Compile Include="DomainTests\UserTests.cs" />
     <Compile Include="ServiceTests\AuthenticationServiceTests.cs" />
     <Compile Include="ServiceTests\ImageServiceTests.cs" />
-    <Compile Include="Fakes\TestAuthenticationRepository.cs" />
     <Compile Include="Fakes\TestUserRepository.cs" />
     <Compile Include="ServiceTests\UserServiceTests.cs" />
+    <Compile Include="UI\Controllers\RegisterControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{9DB6308B-3C85-47F9-8A53-F2AD32C74A3A}</Project>
       <Name>Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TestHelpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
