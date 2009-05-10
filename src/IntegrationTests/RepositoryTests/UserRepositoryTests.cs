@@ -1,8 +1,8 @@
 using MbUnit.Framework;
 using System.Collections.Generic;
 using System;
-using OpenIdAuth.Data.DataAccess;
 using OpenIdAuth.Core.Model.Domain;
+using OpenIdAuth.Core.Model.DataAccess;
 
 namespace OpenIdAuth.IntegrationTests.RepositoryTests {
     [TestFixture]

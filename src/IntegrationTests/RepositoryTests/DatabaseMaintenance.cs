@@ -1,4 +1,3 @@
-using OpenIdAuth.Data;
 using OpenIdAuth.Core.Model.DataAccess.Context;
 using OpenIdAuth.Core.Configuration;
 using Entity = OpenIdAuth.Core.Model.DataAccess.Entity;

@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using System.Web.UI;
 
-namespace OpenIdAuth.Web {
+namespace OpenIdAuth.UI {
     public partial class _Default : Page {
         public void Page_Load(object sender, System.EventArgs e) {
             // Change the current path so that the Routing handler can correctly interpret

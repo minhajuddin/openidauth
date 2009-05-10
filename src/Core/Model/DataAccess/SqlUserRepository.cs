@@ -7,7 +7,7 @@ using OpenIdAuth.Core.Model.Domain;
 using OpenIdAuth.Core.Model.DataAccess;
 using OpenIdAuth.Core.Configuration;
 
-namespace OpenIdAuth.Data.DataAccess {
+namespace OpenIdAuth.Core.Model.DataAccess {
     public class SqlUserRepository : IUserRepository {
         private readonly DB _db;
 

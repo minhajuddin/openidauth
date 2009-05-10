@@ -1,1 +1,2 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="OpenIdAuth.Web.MvcApplication" Language="C#" %>
+﻿<%@ Application CodeBehind="Global.asax.cs" Inherits="OpenIdAuth.UI.OpenIdAuthApp"
+  Language="C#" %>

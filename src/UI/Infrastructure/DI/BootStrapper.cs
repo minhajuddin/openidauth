@@ -1,8 +1,11 @@
+using StructureMap;
+using OpenIdAuth.Core.Infrastructure;
+
 namespace OpenIdAuth.UI.Infrastructure.DI {
-    //Class to boot strap the Structure map IoC
     public class BootStrapper {
         public static void ConfigureStructureMap() {
-
+            ObjectFactory.Initialize(
+                scanner => scanner.AddRegistry(new CoreRegistry()));
         }
     }
 }
