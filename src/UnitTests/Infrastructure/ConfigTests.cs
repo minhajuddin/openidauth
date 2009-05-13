@@ -6,7 +6,7 @@ namespace OpenIdAuth.Infrastructure.UnitTests {
     public class ConfigTests {
         [Test]
         public void GetConnectionStringReturnsTheConnectionStringStoredInTheConfigFile() {
-            var expectedCS = @"Data Source=CV-002\SQLEXPRESS;Initial Catalog=OpenIdAuth;Integrated Security=True";
+            var expectedCS = @"Data Source=.\SQLEXPRESS;Initial Catalog=OpenIdAuth;Integrated Security=True";
             var result = Config.GetConnectionString();
             Assert.AreEqual(expectedCS, result);
         }

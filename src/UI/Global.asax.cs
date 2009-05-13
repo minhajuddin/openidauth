@@ -24,6 +24,7 @@ namespace OpenIdAuth.UI {
 
         protected void Application_Start() {
             RegisterRoutes(RouteTable.Routes);
+            BootStrapper.ConfigureStructureMap();
             ControllerBuilder.Current.SetControllerFactory(new IoCControllerFactory());
         }
     }
