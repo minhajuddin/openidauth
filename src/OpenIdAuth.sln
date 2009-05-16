@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Web Developer Express 2008
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{86AEE7CC-9544-4237-BB9A-C3067272AA91}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{818424B5-3949-4241-B754-991A05751F1A}"
@@ -34,9 +34,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{86AEE7CC-9544-4237-BB9A-C3067272AA91} = {B9C411CC-2C49-4A5B-937A-3488941018D2}
-		{818424B5-3949-4241-B754-991A05751F1A} = {B9C411CC-2C49-4A5B-937A-3488941018D2}
 	EndGlobalSection
 EndGlobal
