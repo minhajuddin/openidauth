@@ -26,7 +26,7 @@ namespace OpenIdAuth.IntegrationTests.RepositoryTests {
 
         [Test]
         public void GetUserShouldBeAbleToGetUserWithUserName() {
-            var result = _repository.GetUser("jack");
+            var result = _repository.GetUser("test");
             Assert.IsNotNull(result);
             Assert.IsTrue(string.Compare("jack", result.UserName, StringComparison.OrdinalIgnoreCase) == 0);
         }
