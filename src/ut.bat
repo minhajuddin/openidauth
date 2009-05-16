@@ -1,0 +1,1 @@
+gallio.echo /v:Verbose /r:Local UnitTests\bin\Debug\UnitTests.dll %*
